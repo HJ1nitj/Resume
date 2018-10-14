@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,10.9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\huge Harshit Jain} & Email : \href{mailto:harshitj.ipe.15@nitj.ac.in}{harshitj.ipe.15@nitj.ac.in}\\
+  \href{https://github.com/HJ1nitj}{Github} & Mobile : +91 8349107971, +91 9870223091 \\
+  \href{https://www.linkedin.com/in/harshit-jain-930a90128/}{Linkedin}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology Jalandhar}{Jalandhar, India}
+      {Btech Industrial and Production Engineering;  CGPA: 8.06 up till 6th Sem}{July. 2015 -- Present}
+    \resumeSubheading
+      {International Public School}{Hoshangabad, India}
+      {Higher Secondary School Certificate Exam;  Marks: 84\%}{April. 2013 -- May. 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+	\resumeSubheading
+	{Episource India LLC}{Mumbai, India}
+	{Summer Intership}{June 2018 - July 2018}
+	  	\resumeItemListStart
+	  	\resumeItem{Time estimation}
+	  	{Designed a ML model for the identification of coder's time with an error of 10\%}
+	  	\resumeItem{Model API}
+	  	{Made an API of the model for specific coder time estimation}
+	\resumeSubHeadingListEnd	
+  
+
+   	\resumeSubheading
+      {Research Trend Analysis}{Jalandhar, India}
+      {Guide:-'Dr.Neeraj Bhanot', IIM Amritsar }{Aug' 2017 - Nov' 2017}
+      
+      
+      \resumeItemListStart
+        \resumeItem{Text Mining}
+          { The project determines in-depth research trends in published litrature using \textbf{Text Mining} approach in Python through unsupervised learning}
+       
+       \resumeItem{Modules covered in project}
+         {Data extraction and preparation through \textbf{NLTK}, Mapping important association for research collaboration through \textbf{Networkx} and identification of literature trends and visualisation through different modes}
+       
+        \resumeItem{Submission}
+        {Made a submission of the research paper in a journal named \textbf{IJPR}}
+       	\resumeItem{Copyright}
+        {Recieved copyright of the python framework}  
+       
+    \resumeItemListEnd
+    
+   \resumeSubheading
+		{RCPL India}{Noida, India}
+		{Summer Training}{June 2017-July 2017}
+		\resumeItemListStart
+		\resumeItem{Concepts of Python and MySQL}
+		{Learned  basic and advanced concepts in python and mysql, Got acquainted with various machine learning modules in python}
+		\resumeItem{Bugtracking Application}
+		{ Designed a real time \textbf{Bugtracking Application} using python and incorporated \textbf{MySQL} as real time database server as final project}
+	
+	\resumeItemListEnd
+
+
+    
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Competitive Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Titanic (Kaggle Competition)}
+      {This project involved predictions of survival on the titanic. Performed \textbf{feature engineering} on train and test data through python. Predicted the survival with an accuracy of \textbf{0.78947} and secured Rank \textbf{2413/10239} on the leaderboard}
+    \resumeSubItem{Big Mart Sales Prediction III (Analytics Vidhya)}
+      {This project involved predictions of oulet sales on \textbf{bigmart data}. Performed feature engineering on train and test data and developed a prediction model through Ranodm forest regressor. Predictied the sales with \textbf{RMSE of 1158 }and secured \textbf{Rank 518} on leaderboard}
+   % \resumeSubItem{Mckinsey Analytics Online Hackathon:}
+    %{This Project involved identification of leads' segments having the higher conversion ratio to identifed the potential customers through additional channels and re-marketing. Used feature engineering and \textbf{Naive bayes Classifier} to arrive at the desired results and secured Rank 219 on the leaderboard}  
+  
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages:} {Python, C++, C}
+      \hfill
+        \textbf{Tools:}{ MS Power point, MS Word} \\
+       	\item {
+       		\textbf{Databse:}{ MySQL}
+       	}
+      }
+  
+    
+\resumeSubHeadingListEnd
+
+
+
+%--------Relevant Corses----------
+\section{Relevant Courses}
+\resumeSubHeadingListStart
+\resumeSubItem{Online Courses}
+{Supervised learning with \textbf{scikit-learn}, Machine learning fundamentals (edx), Applied text mining with python}
+
+\resumeSubItem{Industrial and Production}
+{Production planning and control, Operations research, Quality management, Probability and statistics for engineers, Differential equations
+}
+
+\resumeSubHeadingListEnd
+%\hfill{\textit{* To be completed till Feb' 18}}
+
+
+%---------POR------------
+
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+
+
+
+\resumeSubheading
+{Analytics Cell}{NIT Jalandhar}
+{Cordinator}{April 2017 - Present}
+\resumeItemListStart
+\resumeItem{Workshop}
+{Delivered a workshop on "Introduction to opportunities that exist in analytics domain"}
+\resumeItem{Sessions}
+{Started online learning platform in partnership with DataCamp to motivate the students towards analytics}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Extra Curriculars----------
+
+
+\section{Extra Curriculars}
+\resumeSubHeadingListStart
+\resumeSubItem{Mckinsey Analytics Online Hackathon (Analytics Vidhya)}
+{Predicted the \textbf{Loan Status} of the customer with an accuracy of \textbf{0.71} and secured rank \textbf{218} on the leaderboard}
+
+\resumeSubItem{Australian National Chemistry Quiz}
+{ Participated in Australian National Chemistry Quiz and got destinction prize}
+
+\resumeSubItem{Badminton Competition}
+{Participated in \textbf{Inter Hostel Badminton Competetion} and secured 2nd position}
+
+
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
